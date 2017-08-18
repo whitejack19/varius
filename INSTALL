@@ -1,0 +1,9 @@
+Building VULCANO
+
+See doc/readme-qt.rst for instructions on building VULCANO QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of VULCANO.
+
+See doc/build-*.txt for instructions on building vulcanod,
+the intended-for-services, no-graphical-interface, reference
+implementation of VULCANO.
