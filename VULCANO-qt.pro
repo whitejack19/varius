@@ -2,7 +2,7 @@ TEMPLATE = app
 TARGET = vulcano-qt
 VERSION = 1.0.7
 INCLUDEPATH += src src/json src/qt
-DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
+DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE BOOST_THREAD_PROVIDES_GENERIC_SHARED_MUTEX_ON_WIN
 CONFIG += no_include_pwd
 CONFIG += thread
 CONFIG += static
@@ -25,8 +25,8 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 
 BOOST_INCLUDE_PATH=C:/MinGW/deps/boost_1_55_0
 BOOST_LIB_PATH=C:/MinGW/deps/boost_1_55_0/stage/lib
-BDB_INCLUDE_PATH=C:/MinGW/deps/db-6.1.26.NC/build_unix
-BDB_LIB_PATH=C:/MinGW/deps/db-6.1.26.NC/build_unix
+BDB_INCLUDE_PATH=C:/MinGW/deps/db-4.8.30.NC/build_unix
+BDB_LIB_PATH=C:/MinGW/deps/db-4.8.30.NC/build_unix
 OPENSSL_INCLUDE_PATH=C:/MinGW/deps/openssl-1.0.1j/include
 OPENSSL_LIB_PATH=C:/MinGW/deps/openssl-1.0.1j
 MINIUPNPC_INCLUDE_PATH=C:/MinGW/deps/miniupnpc-1.9
@@ -58,6 +58,21 @@ QMAKE_LFLAGS *= -fstack-protector-all --param ssp-buffer-size=1
 # for extra security on Windows: enable ASLR and DEP via GCC linker flags
 win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat -static
 win32:QMAKE_LFLAGS += -static-libgcc -static-libstdc++
+
+!win32:!macx {
+    QMAKE_LFLAGS *= -static
+    QMAKE_LFLAGS *= -Wl,--large-address-aware
+}
+
+# bug in gcc 4.4 breaks some pointer code
+# QMAKE_CXXFLAGS += -fno-strict-aliasing
+# bug in gcc 4.4 breaks some pointer code
+# QMAKE_CXXFLAGS += -fno-strict-aliasing
+    win32:contains(WINBITS, 32) {
+      # can have strict aliasing if opt is 0
+      QMAKE_CXXFLAGS_RELEASE -= -O2
+      QMAKE_CXXFLAGS_RELEASE += -O0
+}
 
 # use: qmake "USE_QRCODE=1"
 # libqrencode (http://fukuchi.org/works/qrencode/index.en.html) must be installed for support
@@ -407,7 +422,7 @@ windows:!contains(MINGW_THREAD_BUGFIX, 0) {
     # it is prepended to QMAKE_LIBS_QT_ENTRY.
     # It can be turned off with MINGW_THREAD_BUGFIX=0, just in case it causes
     # any problems on some untested qmake profile now or in the future.
-    DEFINES += _MT BOOST_THREAD_PROVIDES_GENERIC_SHARED_MUTEX_ON_WIN
+    
     QMAKE_LIBS_QT_ENTRY = -lmingwthrd $$QMAKE_LIBS_QT_ENTRY
 }
 
@@ -426,7 +441,7 @@ INCLUDEPATH += $$BOOST_INCLUDE_PATH $$BDB_INCLUDE_PATH $$OPENSSL_INCLUDE_PATH $$
 LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,)
 LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
 # -lgdi32 has to happen after -lcrypto (see  #681)
-windows:LIBS += -lws2_32 -lshlwapi -lmswsock -lole32 -loleaut32 -luuid -lgdi32 -lpthread
+windows:LIBS += -lws2_32 -lshlwapi -lmswsock -lole32 -loleaut32  -luuid -lgdi32 -lpthread
 LIBS += -lboost_system$$BOOST_LIB_SUFFIX -lboost_filesystem$$BOOST_LIB_SUFFIX -lboost_program_options$$BOOST_LIB_SUFFIX -lboost_thread$$BOOST_THREAD_LIB_SUFFIX
 windows:LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX
 
