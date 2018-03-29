@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About VULCANO</source>
-        <translation>Over VULCANO</translation>
+        <source>About varius</source>
+        <translation>Over varius</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;VULCANO&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;VULCANO&lt;/b&gt; versie</translation>
+        <source>&lt;b&gt;varius&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;varius&lt;/b&gt; versie</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The VULCANO developers</source>
+Copyright © 2014 The varius developers</source>
         <translation>Copyright © 2009-2014 De Bitcoin ontwikkelaars
 Copyright © 2012-2014 De NovaCoin ontwikkelaars
-Copyright © 2014 De VULCANO ontwikkelaars</translation>
+Copyright © 2014 De varius ontwikkelaars</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,8 +65,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your VULCANO addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dit zijn al jou VULCANO adressen om betalingen mee te ontvangen. Je kunt iedere verzender een apart adres geven zodat je kunt volgen wie jou betaald.</translation>
+        <source>These are your varius addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dit zijn al jou varius adressen om betalingen mee te ontvangen. Je kunt iedere verzender een apart adres geven zodat je kunt volgen wie jou betaald.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -80,8 +80,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a VULCANO address</source>
-        <translation>Teken een bericht om te bewijzen dat je een VULCANO adres bezit.</translation>
+        <source>Sign a message to prove you own a varius address</source>
+        <translation>Teken een bericht om te bewijzen dat je een varius adres bezit.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified VULCANO address</source>
-        <translation>Verifieer een bericht om zeker te zijn dat deze is ondertekend met een specifiek VULCANO adres</translation>
+        <source>Verify a message to ensure it was signed with a specified varius address</source>
+        <translation>Verifieer een bericht om zeker te zijn dat deze is ondertekend met een specifiek varius adres</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,8 +263,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="-58"/>
-        <source>VULCANO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>VULCANO zal nu sluiten om het versleutel proces te voltooien. Onthou dat het versleutelen van je portemonnee je niet volledig beschermt tegen diefstal van munten door malware op je computer.</translation>
+        <source>varius will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>varius zal nu sluiten om het versleutel proces te voltooien. Onthou dat het versleutelen van je portemonnee je niet volledig beschermt tegen diefstal van munten door malware op je computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -377,8 +377,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about VULCANO</source>
-        <translation>Toon informatie over VULCANO</translation>
+        <source>Show information about varius</source>
+        <translation>Toon informatie over varius</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -427,13 +427,13 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a VULCANO address</source>
-        <translation>Verstuur munten naar een VULCANO adres</translation>
+        <source>Send coins to a varius address</source>
+        <translation>Verstuur munten naar een varius adres</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for VULCANO</source>
-        <translation>Verander configuratie opties voor VULCANO</translation>
+        <source>Modify configuration options for varius</source>
+        <translation>Verander configuratie opties voor varius</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -472,8 +472,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="-200"/>
-        <source>VULCANO</source>
-        <translation>VULCANO</translation>
+        <source>varius</source>
+        <translation>varius</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -482,8 +482,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About VULCANO</source>
-        <translation>&amp;Over VULCANO</translation>
+        <source>&amp;About varius</source>
+        <translation>&amp;Over varius</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -539,13 +539,13 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>VULCANO client</source>
-        <translation>VULCANO client</translation>
+        <source>varius client</source>
+        <translation>varius client</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to VULCANO network</source>
-        <translation><numerusform>%n actieve verbinding naar VULCANO netwerk</numerusform><numerusform>%n actieve verbindingen naar VULCANO netwerk</numerusform></translation>
+        <source>%n active connection(s) to varius network</source>
+        <translation><numerusform>%n actieve verbinding naar varius netwerk</numerusform><numerusform>%n actieve verbindingen naar varius netwerk</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -659,8 +659,8 @@ Adres: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid VULCANO address or malformed URI parameters.</source>
-        <translation>URI kan niet ontleedt worden! Mogelijke oorzaken zijn een ongeldig VULCANO adres of incorrecte URI parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid varius address or malformed URI parameters.</source>
+        <translation>URI kan niet ontleedt worden! Mogelijke oorzaken zijn een ongeldig varius adres of incorrecte URI parameters.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -719,8 +719,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. VULCANO can no longer continue safely and will quit.</source>
-        <translation>Een fatale fout . VULCANO kan niet langer veilig doorgaan en sluit af.</translation>
+        <source>A fatal error occurred. varius can no longer continue safely and will quit.</source>
+        <translation>Een fatale fout . varius kan niet langer veilig doorgaan en sluit af.</translation>
     </message>
 </context>
 <context>
@@ -1053,8 +1053,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid VULCANO address.</source>
-        <translation>Het ingevoerde adres &quot;%1&quot; is geen geldig VULCANO adres.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid varius address.</source>
+        <translation>Het ingevoerde adres &quot;%1&quot; is geen geldig varius adres.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1072,8 +1072,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>VULCANO-Qt</source>
-        <translation>VULCANO-Qt</translation>
+        <source>varius-Qt</source>
+        <translation>varius-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1145,13 +1145,13 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start VULCANO after logging in to the system.</source>
-        <translation>Automatisch starten van VULCANO na inloggen van het systeem.</translation>
+        <source>Automatically start varius after logging in to the system.</source>
+        <translation>Automatisch starten van varius na inloggen van het systeem.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start VULCANO on system login</source>
-        <translation>&amp;Start VULCANO bij systeem aanmelding</translation>
+        <source>&amp;Start varius on system login</source>
+        <translation>&amp;Start varius bij systeem aanmelding</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1170,8 +1170,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the VULCANO client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>De VULCANO client poort automatisch openen op de router. Dit werkt alleen wanneer uw router UPnP ondersteunt en deze is ingeschakeld.</translation>
+        <source>Automatically open the varius client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>De varius client poort automatisch openen op de router. Dit werkt alleen wanneer uw router UPnP ondersteunt en deze is ingeschakeld.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1180,8 +1180,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the VULCANO network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Verbinding maken met het VULCANO netwerk via een SOCKS proxy (bijvoorbeeld als U gebruik maakt van Tor)</translation>
+        <source>Connect to the varius network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Verbinding maken met het varius netwerk via een SOCKS proxy (bijvoorbeeld als U gebruik maakt van Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1255,8 +1255,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting VULCANO.</source>
-        <translation>De user interface-taal kan hier ingesteld worden. Deze instelling word toegepast na VULCANO opnieuw op te starten.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting varius.</source>
+        <translation>De user interface-taal kan hier ingesteld worden. Deze instelling word toegepast na varius opnieuw op te starten.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1270,8 +1270,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show VULCANO addresses in the transaction list or not.</source>
-        <translation>VULCANO adressen in de transactielijst weergeven of niet</translation>
+        <source>Whether to show varius addresses in the transaction list or not.</source>
+        <translation>varius adressen in de transactielijst weergeven of niet</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1317,8 +1317,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting VULCANO.</source>
-        <translation>Deze instelling word toegepast na een restart van VULCANO.</translation>
+        <source>This setting will take effect after restarting varius.</source>
+        <translation>Deze instelling word toegepast na een restart van varius.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1336,8 +1336,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the VULCANO network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn, Je portemonnee synchroniseerd automatisch met het VULCANO netwerk nadat er verbindig is gemaakt, maar dit proces is nog niet voltooid.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the varius network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn, Je portemonnee synchroniseerd automatisch met het varius netwerk nadat er verbindig is gemaakt, maar dit proces is nog niet voltooid.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1552,8 +1552,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the VULCANO-Qt help message to get a list with possible VULCANO command-line options.</source>
-        <translation>Laat het VULCANO-QT help bericht zien om een lijst te krijgen met mogelijke VULCANO command-regel opties.</translation>
+        <source>Show the varius-Qt help message to get a list with possible varius command-line options.</source>
+        <translation>Laat het varius-QT help bericht zien om een lijst te krijgen met mogelijke varius command-regel opties.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1572,13 +1572,13 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>VULCANO - Debug window</source>
-        <translation>VULCANO - Debugscherm</translation>
+        <source>varius - Debug window</source>
+        <translation>varius - Debugscherm</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>VULCANO Core</source>
-        <translation>VULCANO Kern</translation>
+        <source>varius Core</source>
+        <translation>varius Kern</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1587,8 +1587,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the VULCANO debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het VULCANO debug log bestand van de huidige data map. Dit kan een paar seconden duren voor grote log bestanden.</translation>
+        <source>Open the varius debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het varius debug log bestand van de huidige data map. Dit kan een paar seconden duren voor grote log bestanden.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1597,8 +1597,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the VULCANO RPC console.</source>
-        <translation>Welkom bij de VULCANO RPC console.</translation>
+        <source>Welcome to the varius RPC console.</source>
+        <translation>Welkom bij de varius RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1756,8 +1756,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a VULCANO address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Voeg een VULCANO adres in (bijv. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a varius address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Voeg een varius adres in (bijv. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1856,8 +1856,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid VULCANO address</source>
-        <translation>WAARSCHUWING: Ongeldig VULCANO adres</translation>
+        <source>WARNING: Invalid varius address</source>
+        <translation>WAARSCHUWING: Ongeldig varius adres</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1930,8 +1930,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a VULCANO address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Voeg een VULCANO adres in (bijv. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a varius address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Voeg een varius adres in (bijv. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -1991,8 +1991,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this VULCANO address</source>
-        <translation>Teken een bericht om te bewijzen dat je een VULCANO adres bezit.</translation>
+        <source>Sign the message to prove you own this varius address</source>
+        <translation>Teken een bericht om te bewijzen dat je een varius adres bezit.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2023,8 +2023,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified VULCANO address</source>
-        <translation>Verifieer een bericht om zeker te zijn dat deze is ondertekend met een specifiek VULCANO adres</translation>
+        <source>Verify the message to ensure it was signed with the specified varius address</source>
+        <translation>Verifieer een bericht om zeker te zijn dat deze is ondertekend met een specifiek varius adres</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2034,8 +2034,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a VULCANO address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Voeg een VULCANO adres in (bijv. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a varius address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Voeg een varius adres in (bijv. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2044,8 +2044,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter VULCANO signature</source>
-        <translation>Voer VULCANO handtekening in</translation>
+        <source>Enter varius signature</source>
+        <translation>Voer varius handtekening in</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2615,8 +2615,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>VULCANO version</source>
-        <translation>VULCANO versie</translation>
+        <source>varius version</source>
+        <translation>varius versie</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2625,8 +2625,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or vulcanod</source>
-        <translation>Verstuur commando naar -server of vulcanod</translation>
+        <source>Send command to -server or variusd</source>
+        <translation>Verstuur commando naar -server of variusd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2645,13 +2645,13 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: vulcano.conf)</source>
-        <translation>Selecteer configuratie bestand (standaard: vulcano.conf)</translation>
+        <source>Specify configuration file (default: varius.conf)</source>
+        <translation>Selecteer configuratie bestand (standaard: varius.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: vulcanod.pid)</source>
-        <translation>Selecteer pid bestand (standaard: vulcano.conf)</translation>
+        <source>Specify pid file (default: variusd.pid)</source>
+        <translation>Selecteer pid bestand (standaard: varius.conf)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2800,8 +2800,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong VULCANO will not work properly.</source>
-        <translation>Waarschuwing: Controleer of de datum en tijd van de computer juist zijn! Als uw klok verkeerd is VULCANO zal niet goed werken.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong varius will not work properly.</source>
+        <translation>Waarschuwing: Controleer of de datum en tijd van de computer juist zijn! Als uw klok verkeerd is varius zal niet goed werken.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2990,24 +2990,24 @@ Dit betekend dat een fee van %2 is vereist.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=vulcanorpc
+rpcuser=variusrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;varius Alert&quot; admin@foo.com
 </source>
         <translation>%s, u moet een rpcpassword instellen in het configuratiebestand: 
 %s 
 Het wordt aanbevolen de volgende willekeurig wachtwoord gebruiken: 
-rpcuser = vulcanorpc 
+rpcuser = variusrpc 
 rpcpassword = %s 
 (je hoeft niet dit wachtwoord te onthouden) 
 De gebruikersnaam en het wachtwoord MAG NIET hetzelfde zijn. 
 Als het bestand niet bestaat, maakt u met leesbare-alleen-eigenaar bestandsbeheermachtigingen.  
 Het wordt ook aanbevolen om alertnotify instellen zodat u een melding van problemen;  
-bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.com </translation>
+bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;varius Alert&quot; admin@foo.com </translation>
     </message>
     <message>
         <location line="+51"/>
@@ -3131,13 +3131,13 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;VULCANO Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  VULCANO is probably already running.</source>
-        <translation>Kan een slot op data directory %s niet verkrijgen. VULCANO wordt waarschijnlijk al uitgevoerd.</translation>
+        <source>Cannot obtain a lock on data directory %s.  varius is probably already running.</source>
+        <translation>Kan een slot op data directory %s niet verkrijgen. varius wordt waarschijnlijk al uitgevoerd.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>VULCANO</source>
-        <translation>VULCANO</translation>
+        <source>varius</source>
+        <translation>varius</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3171,13 +3171,13 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;VULCANO Alert&quot; admin@f
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of VULCANO</source>
-        <translation>Fout bij laden van wallet.dat: Portemonnee vereist een nieuwere versie van VULCANO</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of varius</source>
+        <translation>Fout bij laden van wallet.dat: Portemonnee vereist een nieuwere versie van varius</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart VULCANO to complete</source>
-        <translation>Portemonnee moet herschreven worden: herstart VULCANO om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart varius to complete</source>
+        <translation>Portemonnee moet herschreven worden: herstart varius om te voltooien</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3246,8 +3246,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;VULCANO Alert&quot; admin@f
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. VULCANO is probably already running.</source>
-        <translation>Niet mogelijk om %s op deze computer. VULCANO is waarschijnlijk al geopened.</translation>
+        <source>Unable to bind to %s on this computer. varius is probably already running.</source>
+        <translation>Niet mogelijk om %s op deze computer. varius is waarschijnlijk al geopened.</translation>
     </message>
     <message>
         <location line="-97"/>

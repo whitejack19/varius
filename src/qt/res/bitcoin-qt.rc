@@ -18,14 +18,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "VULCANO"
-            VALUE "FileDescription",    "VULCANO-Qt (OSS GUI client for VULCANO)"
+            VALUE "CompanyName",        "VARIUS"
+            VALUE "FileDescription",    "VARIUS-Qt (OSS GUI client for VARIUS)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "vulcano-qt"
-            VALUE "LegalCopyright",     "2009-2014 The Bitcoin developers, 2012-2014 The NovaCoin & PPCoin developers, 2014 The VULCANO developers"
+            VALUE "InternalName",       "varius-qt"
+            VALUE "LegalCopyright",     "2009-2014 The Bitcoin developers, 2012-2014 The NovaCoin & PPCoin developers, 2014 The VARIUS developers"
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "vulcano-qt.exe"
-            VALUE "ProductName",        "VULCANO-Qt"
+            VALUE "OriginalFilename",   "varius-qt.exe"
+            VALUE "ProductName",        "VARIUS-Qt"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

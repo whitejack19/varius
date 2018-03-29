@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About VULCANO</source>
-        <translation>Despre VULCANO</translation>
+        <source>About varius</source>
+        <translation>Despre varius</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;VULCANO&lt;/b&gt; version</source>
-        <translation>Versiune &lt;b&gt;VULCANO&lt;/b&gt;</translation>
+        <source>&lt;b&gt;varius&lt;/b&gt; version</source>
+        <translation>Versiune &lt;b&gt;varius&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The VULCANO developers</source>
+Copyright © 2014 The varius developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The VULCANO developers</translation>
+Copyright © 2014 The varius developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,8 +65,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your VULCANO addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Acestea sunt adresele VULCANO pentru a primi plăți. Poate doriți sa dați o adresa noua fiecarui expeditor pentru a putea ține evidența la cine efectuează plăti.</translation>
+        <source>These are your varius addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Acestea sunt adresele varius pentru a primi plăți. Poate doriți sa dați o adresa noua fiecarui expeditor pentru a putea ține evidența la cine efectuează plăti.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -80,8 +80,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a VULCANO address</source>
-        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă VULCANO</translation>
+        <source>Sign a message to prove you own a varius address</source>
+        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă varius</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified VULCANO address</source>
-        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă VULCANO</translation>
+        <source>Verify a message to ensure it was signed with a specified varius address</source>
+        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă varius</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,8 +263,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="-58"/>
-        <source>VULCANO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>VULCANO se va inchide pentru a termina procesul de encriptie. Amintiți-vă, criptarea portofelul dumneavoastră nu poate proteja pe deplin monedele dvs. de a fi furate de  infectarea cu malware a computerului.</translation>
+        <source>varius will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>varius se va inchide pentru a termina procesul de encriptie. Amintiți-vă, criptarea portofelul dumneavoastră nu poate proteja pe deplin monedele dvs. de a fi furate de  infectarea cu malware a computerului.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -377,8 +377,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about VULCANO</source>
-        <translation>Arată informații despre VULCANO</translation>
+        <source>Show information about varius</source>
+        <translation>Arată informații despre varius</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -427,13 +427,13 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a VULCANO address</source>
-        <translation>Trimite monede către o adresă VULCANO</translation>
+        <source>Send coins to a varius address</source>
+        <translation>Trimite monede către o adresă varius</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for VULCANO</source>
-        <translation>Modifică opțiuni de configurare pentru VULCANO</translation>
+        <source>Modify configuration options for varius</source>
+        <translation>Modifică opțiuni de configurare pentru varius</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -472,8 +472,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="-200"/>
-        <source>VULCANO</source>
-        <translation>VULCANO</translation>
+        <source>varius</source>
+        <translation>varius</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -482,8 +482,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About VULCANO</source>
-        <translation>Despre VULCANO</translation>
+        <source>&amp;About varius</source>
+        <translation>Despre varius</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -539,13 +539,13 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>VULCANO client</source>
-        <translation>Clientul VULCANO</translation>
+        <source>varius client</source>
+        <translation>Clientul varius</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to VULCANO network</source>
-        <translation><numerusform>%n conexiune activă la reteaua VULCANO</numerusform><numerusform>%n conexiuni active la reteaua VULCANO</numerusform><numerusform>%n conexiuni active la reteaua VULCANO</numerusform></translation>
+        <source>%n active connection(s) to varius network</source>
+        <translation><numerusform>%n conexiune activă la reteaua varius</numerusform><numerusform>%n conexiuni active la reteaua varius</numerusform><numerusform>%n conexiuni active la reteaua varius</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -659,8 +659,8 @@ Adresa: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid VULCANO address or malformed URI parameters.</source>
-        <translation>URI nu poate fi parsatt! Cauza poate fi o adresa VULCANO invalidă sau parametrii URI malformați.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid varius address or malformed URI parameters.</source>
+        <translation>URI nu poate fi parsatt! Cauza poate fi o adresa varius invalidă sau parametrii URI malformați.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -719,8 +719,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. VULCANO can no longer continue safely and will quit.</source>
-        <translation>A apărut o eroare fatală. VULCANO nu mai poate continua în condiții de siguranță și va iesi.</translation>
+        <source>A fatal error occurred. varius can no longer continue safely and will quit.</source>
+        <translation>A apărut o eroare fatală. varius nu mai poate continua în condiții de siguranță și va iesi.</translation>
     </message>
 </context>
 <context>
@@ -1053,8 +1053,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid VULCANO address.</source>
-        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă VULCANO validă</translation>
+        <source>The entered address &quot;%1&quot; is not a valid varius address.</source>
+        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă varius validă</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1072,8 +1072,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>VULCANO-Qt</source>
-        <translation>VULCANO-Qt</translation>
+        <source>varius-Qt</source>
+        <translation>varius-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1145,13 +1145,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start VULCANO after logging in to the system.</source>
-        <translation>Pornește VULCANO imdiat după logarea în sistem</translation>
+        <source>Automatically start varius after logging in to the system.</source>
+        <translation>Pornește varius imdiat după logarea în sistem</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start VULCANO on system login</source>
-        <translation>$Pornește VULCANO la logarea în sistem</translation>
+        <source>&amp;Start varius on system login</source>
+        <translation>$Pornește varius la logarea în sistem</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1170,8 +1170,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the VULCANO client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat portul pentru cientul VULCANO pe router. Aces lucru este posibil doara daca routerul suporta UPnP si este activat</translation>
+        <source>Automatically open the varius client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat portul pentru cientul varius pe router. Aces lucru este posibil doara daca routerul suporta UPnP si este activat</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1180,8 +1180,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the VULCANO network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Conecteaza la reteaua VULCANO prinr-un proxy SOCKS(ex. cand te conectezi prin Tor)</translation>
+        <source>Connect to the varius network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Conecteaza la reteaua varius prinr-un proxy SOCKS(ex. cand te conectezi prin Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1255,8 +1255,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting VULCANO.</source>
-        <translation>Limba interfeței utilizator poate fi setat aici. Această setare va avea efect după repornirea VULCANO.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting varius.</source>
+        <translation>Limba interfeței utilizator poate fi setat aici. Această setare va avea efect după repornirea varius.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1270,8 +1270,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show VULCANO addresses in the transaction list or not.</source>
-        <translation>Dacă să arate adrese VULCANO din lista de tranzacție sau nu.</translation>
+        <source>Whether to show varius addresses in the transaction list or not.</source>
+        <translation>Dacă să arate adrese varius din lista de tranzacție sau nu.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1317,8 +1317,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting VULCANO.</source>
-        <translation>Aceasta setare va avea efect dupa repornirea VULCANO.</translation>
+        <source>This setting will take effect after restarting varius.</source>
+        <translation>Aceasta setare va avea efect dupa repornirea varius.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1336,8 +1336,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the VULCANO network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua VULCANO după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the varius network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua varius după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1552,8 +1552,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the VULCANO-Qt help message to get a list with possible VULCANO command-line options.</source>
-        <translation>Afișa mesajul de ajutor VULCANO-Qt pentru a obține o listă cu posibile opțiuni de linie de comandă VULCANO.</translation>
+        <source>Show the varius-Qt help message to get a list with possible varius command-line options.</source>
+        <translation>Afișa mesajul de ajutor varius-Qt pentru a obține o listă cu posibile opțiuni de linie de comandă varius.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1572,13 +1572,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>VULCANO - Debug window</source>
-        <translation>VULCANO - fereastră depanare</translation>
+        <source>varius - Debug window</source>
+        <translation>varius - fereastră depanare</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>VULCANO Core</source>
-        <translation>VULCANO Core</translation>
+        <source>varius Core</source>
+        <translation>varius Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1587,8 +1587,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the VULCANO debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Deschideti fisierul de depanare VULCANO din folderul curent. Acest lucru poate dura cateva secunde pentru fisiere de log mari.</translation>
+        <source>Open the varius debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Deschideti fisierul de depanare varius din folderul curent. Acest lucru poate dura cateva secunde pentru fisiere de log mari.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1597,8 +1597,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the VULCANO RPC console.</source>
-        <translation>Bine ati venit la consola VULCANO RPC.</translation>
+        <source>Welcome to the varius RPC console.</source>
+        <translation>Bine ati venit la consola varius RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1756,8 +1756,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a VULCANO address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introduceți o adresă VULCANO(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a varius address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introduceți o adresă varius(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1856,8 +1856,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid VULCANO address</source>
-        <translation>Atenție: Adresă VULCANO invalidă</translation>
+        <source>WARNING: Invalid varius address</source>
+        <translation>Atenție: Adresă varius invalidă</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1930,8 +1930,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a VULCANO address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introduceți o adresă VULCANO(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a varius address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introduceți o adresă varius(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -1991,8 +1991,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this VULCANO address</source>
-        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă VULCANO</translation>
+        <source>Sign the message to prove you own this varius address</source>
+        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă varius</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2023,8 +2023,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified VULCANO address</source>
-        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă VULCANO</translation>
+        <source>Verify the message to ensure it was signed with the specified varius address</source>
+        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă varius</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2034,8 +2034,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a VULCANO address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introduceți o adresă VULCANO(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a varius address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introduceți o adresă varius(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2044,8 +2044,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter VULCANO signature</source>
-        <translation>Introduceti semnatura VULCANO</translation>
+        <source>Enter varius signature</source>
+        <translation>Introduceti semnatura varius</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2615,8 +2615,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>VULCANO version</source>
-        <translation>Versiune VULCANO</translation>
+        <source>varius version</source>
+        <translation>Versiune varius</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2625,8 +2625,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or vulcanod</source>
-        <translation>Trimite comanda catre server sau vulcanod</translation>
+        <source>Send command to -server or variusd</source>
+        <translation>Trimite comanda catre server sau variusd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2645,13 +2645,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: vulcano.conf)</source>
-        <translation>Specifica fisier de configurare(implicit: vulcano.conf)</translation>
+        <source>Specify configuration file (default: varius.conf)</source>
+        <translation>Specifica fisier de configurare(implicit: varius.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: vulcanod.pid)</source>
-        <translation>Speficica fisier pid(implicit: vulcano.pid)</translation>
+        <source>Specify pid file (default: variusd.pid)</source>
+        <translation>Speficica fisier pid(implicit: varius.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2800,8 +2800,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong VULCANO will not work properly.</source>
-        <translation>Atentie: Va rugam verificati ca timpul si data calculatorului sunt corete. Daca timpul este gresit VULCANO nu va functiona corect.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong varius will not work properly.</source>
+        <translation>Atentie: Va rugam verificati ca timpul si data calculatorului sunt corete. Daca timpul este gresit varius nu va functiona corect.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2990,22 +2990,22 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=vulcanorpc
+rpcuser=variusrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;varius Alert&quot; admin@foo.com
 </source>
         <translation>%s, trebuie să configurați o parolă rpc în fișierul de configurare: %s
-Este recomandat să folosiți următoarea parolă generată aleator: rpcuser=vulcanorpc
+Este recomandat să folosiți următoarea parolă generată aleator: rpcuser=variusrpc
 rpcpassword=%s
 (nu trebuie să țineți minte această parolă)
 Username-ul și parola NU TREBUIE să fie aceleași.
 Dacă fișierul nu există, creați-l cu drepturi de citire doar de către deținător.
 Este deasemenea recomandat să setați alertnotify pentru a fi notificat de probleme;
-de exemplu: alertnotify=echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.com
+de exemplu: alertnotify=echo %%s | mail -s &quot;varius Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3130,13 +3130,13 @@ de exemplu: alertnotify=echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  VULCANO is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  varius is probably already running.</source>
         <translation>Nu se poate obtine un lock pe directorul de date &amp;s. Blackoin probabil ruleaza deja.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>VULCANO</source>
-        <translation>VULCANO</translation>
+        <source>varius</source>
+        <translation>varius</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3170,13 +3170,13 @@ de exemplu: alertnotify=echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of VULCANO</source>
-        <translation>Eroare la încărcarea wallet.dat: Portofelul necesita o versiune mai noua de VULCANO</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of varius</source>
+        <translation>Eroare la încărcarea wallet.dat: Portofelul necesita o versiune mai noua de varius</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart VULCANO to complete</source>
-        <translation>A fost nevoie de rescrierea portofelului: restartați VULCANO pentru a finaliza</translation>
+        <source>Wallet needed to be rewritten: restart varius to complete</source>
+        <translation>A fost nevoie de rescrierea portofelului: restartați varius pentru a finaliza</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3245,8 +3245,8 @@ de exemplu: alertnotify=echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. VULCANO is probably already running.</source>
-        <translation>Imposibil de conectat %s pe acest computer. Cel mai probabil VULCANO ruleaza</translation>
+        <source>Unable to bind to %s on this computer. varius is probably already running.</source>
+        <translation>Imposibil de conectat %s pe acest computer. Cel mai probabil varius ruleaza</translation>
     </message>
     <message>
         <location line="-97"/>

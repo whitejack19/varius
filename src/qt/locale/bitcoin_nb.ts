@@ -3,19 +3,19 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About VULCANO</source>
-        <translation>Om VULCANO</translation>
+        <source>About varius</source>
+        <translation>Om varius</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;VULCANO&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;VULCANO&lt;/b&gt; versjon</translation>
+        <source>&lt;b&gt;varius&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;varius&lt;/b&gt; versjon</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The VULCANO developers</source>
+Copyright © 2014 The varius developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -63,7 +63,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your VULCANO addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your varius addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Dette er adressene for å motta betalinger. Du ønsker kanskje å gi ulike adresser til hver avsender så du lettere kan holde øye med hvem som betaler deg.</translation>
     </message>
     <message>
@@ -78,8 +78,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a VULCANO address</source>
-        <translation>Signer en melding for å bevise din egen VULCANO adresse.</translation>
+        <source>Sign a message to prove you own a varius address</source>
+        <translation>Signer en melding for å bevise din egen varius adresse.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -93,8 +93,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified VULCANO address</source>
-        <translation>Verifiser en melding får å forsikre deg om at den er signert med en spesifikk VULCANO adresse</translation>
+        <source>Verify a message to ensure it was signed with a specified varius address</source>
+        <translation>Verifiser en melding får å forsikre deg om at den er signert med en spesifikk varius adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -261,7 +261,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="-58"/>
-        <source>VULCANO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>varius will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -375,8 +375,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about VULCANO</source>
-        <translation>Vis info om VULCANO</translation>
+        <source>Show information about varius</source>
+        <translation>Vis info om varius</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -425,13 +425,13 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a VULCANO address</source>
-        <translation>Send coins til en VULCANO adresse</translation>
+        <source>Send coins to a varius address</source>
+        <translation>Send coins til en varius adresse</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for VULCANO</source>
-        <translation>Endre innstillingene til VULCANO</translation>
+        <source>Modify configuration options for varius</source>
+        <translation>Endre innstillingene til varius</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -470,8 +470,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="-200"/>
-        <source>VULCANO</source>
-        <translation>VULCANO</translation>
+        <source>varius</source>
+        <translation>varius</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -480,8 +480,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About VULCANO</source>
-        <translation>&amp;Om VULCANO</translation>
+        <source>&amp;About varius</source>
+        <translation>&amp;Om varius</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -537,13 +537,13 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>VULCANO client</source>
-        <translation>VULCANO klient</translation>
+        <source>varius client</source>
+        <translation>varius klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to VULCANO network</source>
-        <translation><numerusform>%n aktiv tilkobling til VULCANO nettverket</numerusform><numerusform>%n aktive tilkoblinger til VULCANO nettverket</numerusform></translation>
+        <source>%n active connection(s) to varius network</source>
+        <translation><numerusform>%n aktiv tilkobling til varius nettverket</numerusform><numerusform>%n aktive tilkoblinger til varius nettverket</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -657,7 +657,7 @@ Adresse: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid VULCANO address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid varius address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -717,7 +717,7 @@ Adresse: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. VULCANO can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. varius can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1039,8 +1039,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid VULCANO address.</source>
-        <translation>Den angitte adressen &quot;%1&quot; er ikke en gyldig VULCANO adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid varius address.</source>
+        <translation>Den angitte adressen &quot;%1&quot; er ikke en gyldig varius adresse.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1058,8 +1058,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>VULCANO-Qt</source>
-        <translation>VULCANO-Qt</translation>
+        <source>varius-Qt</source>
+        <translation>varius-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1131,13 +1131,13 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start VULCANO after logging in to the system.</source>
+        <source>Automatically start varius after logging in to the system.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start VULCANO on system login</source>
-        <translation>&amp;Start VULCANO ved innlogging</translation>
+        <source>&amp;Start varius on system login</source>
+        <translation>&amp;Start varius ved innlogging</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1156,7 +1156,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the VULCANO client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the varius client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1166,7 +1166,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the VULCANO network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the varius network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1241,7 +1241,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting VULCANO.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting varius.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1256,7 +1256,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show VULCANO addresses in the transaction list or not.</source>
+        <source>Whether to show varius addresses in the transaction list or not.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1303,7 +1303,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting VULCANO.</source>
+        <source>This setting will take effect after restarting varius.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1322,7 +1322,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the VULCANO network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the varius network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1538,7 +1538,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the VULCANO-Qt help message to get a list with possible VULCANO command-line options.</source>
+        <source>Show the varius-Qt help message to get a list with possible varius command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1558,12 +1558,12 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>VULCANO - Debug window</source>
+        <source>varius - Debug window</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+25"/>
-        <source>VULCANO Core</source>
+        <source>varius Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1573,7 +1573,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the VULCANO debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the varius debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1583,7 +1583,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the VULCANO RPC console.</source>
+        <source>Welcome to the varius RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1742,7 +1742,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a VULCANO address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a varius address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1842,8 +1842,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid VULCANO address</source>
-        <translation>ADVARSEL: Ugyldig VULCANO adresse</translation>
+        <source>WARNING: Invalid varius address</source>
+        <translation>ADVARSEL: Ugyldig varius adresse</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1916,7 +1916,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a VULCANO address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a varius address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1977,7 +1977,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this VULCANO address</source>
+        <source>Sign the message to prove you own this varius address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2009,7 +2009,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified VULCANO address</source>
+        <source>Verify the message to ensure it was signed with the specified varius address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2020,7 +2020,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a VULCANO address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a varius address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2030,7 +2030,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter VULCANO signature</source>
+        <source>Enter varius signature</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2601,8 +2601,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>VULCANO version</source>
-        <translation>VULCANO versjon</translation>
+        <source>varius version</source>
+        <translation>varius versjon</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2611,7 +2611,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or vulcanod</source>
+        <source>Send command to -server or variusd</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2631,12 +2631,12 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: vulcano.conf)</source>
+        <source>Specify configuration file (default: varius.conf)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: vulcanod.pid)</source>
+        <source>Specify pid file (default: variusd.pid)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2786,7 +2786,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong VULCANO will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong varius will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2975,13 +2975,13 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=vulcanorpc
+rpcuser=variusrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;varius Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3107,13 +3107,13 @@ for example: alertnotify=echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  VULCANO is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  varius is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="-98"/>
-        <source>VULCANO</source>
-        <translation>VULCANO</translation>
+        <source>varius</source>
+        <translation>varius</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3147,12 +3147,12 @@ for example: alertnotify=echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of VULCANO</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of varius</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart VULCANO to complete</source>
+        <source>Wallet needed to be rewritten: restart varius to complete</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3222,7 +3222,7 @@ for example: alertnotify=echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. VULCANO is probably already running.</source>
+        <source>Unable to bind to %s on this computer. varius is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

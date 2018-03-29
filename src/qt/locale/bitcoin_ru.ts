@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About VULCANO</source>
-        <translation>О VULCANO</translation>
+        <source>About varius</source>
+        <translation>О varius</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;VULCANO&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;VULCANO&lt;/b&gt; версия</translation>
+        <source>&lt;b&gt;varius&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;varius&lt;/b&gt; версия</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The VULCANO developers</source>
+Copyright © 2014 The varius developers</source>
         <translation>Все права защищены © 2009-2014 Разработчики Bitcoin
 Все права защищены © 2012-2014 Разработчики NovaCoin
-Все права защищены © 2014 Разработчики VULCANO</translation>
+Все права защищены © 2014 Разработчики varius</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,7 +65,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your VULCANO addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your varius addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Это Ваши адреса для получения платежей. Вы можете дать разные адреса отправителям, чтобы отслеживать, кто именно вам платит.</translation>
     </message>
     <message>
@@ -80,8 +80,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a VULCANO address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом VULCANO</translation>
+        <source>Sign a message to prove you own a varius address</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом varius</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified VULCANO address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом VULCANO</translation>
+        <source>Verify a message to ensure it was signed with a specified varius address</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом varius</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,7 +263,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-58"/>
-        <source>VULCANO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>varius will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши монеты от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
@@ -377,8 +377,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about VULCANO</source>
-        <translation>Показать информацию о VULCANO&apos;е</translation>
+        <source>Show information about varius</source>
+        <translation>Показать информацию о varius&apos;е</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -427,13 +427,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a VULCANO address</source>
-        <translation>Отправить монеты на указанный адрес VULCANO</translation>
+        <source>Send coins to a varius address</source>
+        <translation>Отправить монеты на указанный адрес varius</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for VULCANO</source>
-        <translation>Изменить параметры конфигурации VULCANO</translation>
+        <source>Modify configuration options for varius</source>
+        <translation>Изменить параметры конфигурации varius</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -472,8 +472,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-200"/>
-        <source>VULCANO</source>
-        <translation>VULCANO</translation>
+        <source>varius</source>
+        <translation>varius</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -482,8 +482,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About VULCANO</source>
-        <translation>&amp;О VULCANO</translation>
+        <source>&amp;About varius</source>
+        <translation>&amp;О varius</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -539,12 +539,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>VULCANO client</source>
-        <translation>VULCANO клиент</translation>
+        <source>varius client</source>
+        <translation>varius клиент</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to VULCANO network</source>
+        <source>%n active connection(s) to varius network</source>
         <translation><numerusform>%n активное соединение с сетью</numerusform><numerusform>%n активных соединений с сетью</numerusform><numerusform>%n активных соединений с сетью</numerusform></translation>
     </message>
     <message>
@@ -659,8 +659,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid VULCANO address or malformed URI parameters.</source>
-        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом VULCANO или неправильными параметрами URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid varius address or malformed URI parameters.</source>
+        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом varius или неправильными параметрами URI.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -719,8 +719,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. VULCANO can no longer continue safely and will quit.</source>
-        <translation>Произошла неисправимая ошибка. VULCANO не может безопасно продолжать работу и будет закрыт.</translation>
+        <source>A fatal error occurred. varius can no longer continue safely and will quit.</source>
+        <translation>Произошла неисправимая ошибка. varius не может безопасно продолжать работу и будет закрыт.</translation>
     </message>
 </context>
 <context>
@@ -1039,8 +1039,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid VULCANO address.</source>
-        <translation>Введённый адрес &quot;%1&quot; не является правильным VULCANO-адресом.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid varius address.</source>
+        <translation>Введённый адрес &quot;%1&quot; не является правильным varius-адресом.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1058,8 +1058,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>VULCANO-Qt</source>
-        <translation>VULCANO-Qt</translation>
+        <source>varius-Qt</source>
+        <translation>varius-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1131,13 +1131,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start VULCANO after logging in to the system.</source>
-        <translation>Автоматически запускать VULCANO после входа в систему</translation>
+        <source>Automatically start varius after logging in to the system.</source>
+        <translation>Автоматически запускать varius после входа в систему</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start VULCANO on system login</source>
-        <translation>&amp;Запускать VULCANO при входе в систему</translation>
+        <source>&amp;Start varius on system login</source>
+        <translation>&amp;Запускать varius при входе в систему</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1156,8 +1156,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the VULCANO client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть порт для VULCANO-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
+        <source>Automatically open the varius client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть порт для varius-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1166,8 +1166,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the VULCANO network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Подключаться к сети VULCANO через прокси SOCKS (например, при подключении через Tor).</translation>
+        <source>Connect to the varius network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Подключаться к сети varius через прокси SOCKS (например, при подключении через Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1241,8 +1241,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting VULCANO.</source>
-        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска VULCANO.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting varius.</source>
+        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска varius.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1256,8 +1256,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show VULCANO addresses in the transaction list or not.</source>
-        <translation>Показывать ли адреса VULCANO в списке транзакций.</translation>
+        <source>Whether to show varius addresses in the transaction list or not.</source>
+        <translation>Показывать ли адреса varius в списке транзакций.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1303,8 +1303,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting VULCANO.</source>
-        <translation>Эта настройка вступит в силу после перезапуска VULCANO</translation>
+        <source>This setting will take effect after restarting varius.</source>
+        <translation>Эта настройка вступит в силу после перезапуска varius</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1322,8 +1322,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the VULCANO network after a connection is established, but this process has not completed yet.</source>
-        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью VULCANO после подключения, но этот процесс пока не завершён.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the varius network after a connection is established, but this process has not completed yet.</source>
+        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью varius после подключения, но этот процесс пока не завершён.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1538,8 +1538,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the VULCANO-Qt help message to get a list with possible VULCANO command-line options.</source>
-        <translation>Показать помощь по VULCANO-Qt, чтобы получить список доступных параметров командной строки.</translation>
+        <source>Show the varius-Qt help message to get a list with possible varius command-line options.</source>
+        <translation>Показать помощь по varius-Qt, чтобы получить список доступных параметров командной строки.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1558,13 +1558,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>VULCANO - Debug window</source>
-        <translation>VULCANO - Окно отладки</translation>
+        <source>varius - Debug window</source>
+        <translation>varius - Окно отладки</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>VULCANO Core</source>
-        <translation>Ядро VULCANO</translation>
+        <source>varius Core</source>
+        <translation>Ядро varius</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1573,8 +1573,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the VULCANO debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть отладочный лог-файл VULCANO из текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
+        <source>Open the varius debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть отладочный лог-файл varius из текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1583,8 +1583,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the VULCANO RPC console.</source>
-        <translation>Добро пожаловать в RPC-консоль VULCANO.</translation>
+        <source>Welcome to the varius RPC console.</source>
+        <translation>Добро пожаловать в RPC-консоль varius.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1742,8 +1742,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a VULCANO address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Введите VULCANO-адрес (например B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a varius address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Введите varius-адрес (например B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1842,7 +1842,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid VULCANO address</source>
+        <source>WARNING: Invalid varius address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1916,8 +1916,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a VULCANO address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Введите VULCANO-адрес (например B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a varius address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Введите varius-адрес (например B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -1977,8 +1977,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this VULCANO address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом VULCANO</translation>
+        <source>Sign the message to prove you own this varius address</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом varius</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2009,8 +2009,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified VULCANO address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом VULCANO</translation>
+        <source>Verify the message to ensure it was signed with the specified varius address</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом varius</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2020,8 +2020,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a VULCANO address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Введите адрес VULCANO (напр. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a varius address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Введите адрес varius (напр. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2030,8 +2030,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter VULCANO signature</source>
-        <translation>Введите подпись VULCANO</translation>
+        <source>Enter varius signature</source>
+        <translation>Введите подпись varius</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2601,7 +2601,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>VULCANO version</source>
+        <source>varius version</source>
         <translation>Версия</translation>
     </message>
     <message>
@@ -2611,8 +2611,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or vulcanod</source>
-        <translation>Отправить команду на -server или vulcanod</translation>
+        <source>Send command to -server or variusd</source>
+        <translation>Отправить команду на -server или variusd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2632,13 +2632,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: vulcano.conf)</source>
-        <translation>Указать конфигурационный файл (по умолчанию: vulcano.conf)</translation>
+        <source>Specify configuration file (default: varius.conf)</source>
+        <translation>Указать конфигурационный файл (по умолчанию: varius.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: vulcanod.pid)</source>
-        <translation>Указать pid-файл (по умолчанию: vulcanod.pid)</translation>
+        <source>Specify pid file (default: variusd.pid)</source>
+        <translation>Указать pid-файл (по умолчанию: variusd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2787,8 +2787,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong VULCANO will not work properly.</source>
-        <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, VULCANO будет работать некорректно.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong varius will not work properly.</source>
+        <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, varius будет работать некорректно.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2977,13 +2977,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=vulcanorpc
+rpcuser=variusrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;varius Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3109,13 +3109,13 @@ for example: alertnotify=echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  VULCANO is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  varius is probably already running.</source>
         <translation>Невозможно установить блокировку на рабочую директорию %s.  Возможно, бумажник уже запущен.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>VULCANO</source>
-        <translation>VULCANO</translation>
+        <source>varius</source>
+        <translation>varius</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3149,13 +3149,13 @@ for example: alertnotify=echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of VULCANO</source>
-        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию VULCANO</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of varius</source>
+        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию varius</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart VULCANO to complete</source>
-        <translation>Необходимо перезаписать бумажник, перезапустите VULCANO для завершения операции</translation>
+        <source>Wallet needed to be rewritten: restart varius to complete</source>
+        <translation>Необходимо перезаписать бумажник, перезапустите varius для завершения операции</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3224,8 +3224,8 @@ for example: alertnotify=echo %%s | mail -s &quot;VULCANO Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. VULCANO is probably already running.</source>
-        <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, VULCANO уже работает.</translation>
+        <source>Unable to bind to %s on this computer. varius is probably already running.</source>
+        <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, varius уже работает.</translation>
     </message>
     <message>
         <location line="-97"/>
