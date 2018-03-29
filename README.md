@@ -1,3 +1,1 @@
-
-
-VULCANO is a PoS-based cryptocurrency.
+VARIUS is a PoS-based cryptocurrency.

@@ -1,0 +1,76 @@
+diff --git a/dbreg/dbreg.c b/dbreg/dbreg.c
+index 5876ce4..46473dc 100644
+--- a/dbreg/dbreg.c
++++ b/dbreg/dbreg.c
+@@ -680,6 +680,8 @@ __dbreg_failchk(env)
+ 	LOG *lp;
+ 	int ret, t_ret;
+ 	char buf[DB_THREADID_STRLEN];
++	db_threadid_t unused;
++	memset(&unused, 0, sizeof(unused));
+ 
+ 	if ((dblp = env->lg_handle) == NULL)
+ 		return (0);
+@@ -691,12 +693,12 @@ __dbreg_failchk(env)
+ 	MUTEX_LOCK(env, lp->mtx_filelist);
+ 	for (fnp = SH_TAILQ_FIRST(&lp->fq, __fname); fnp != NULL; fnp = nnp) {
+ 		nnp = SH_TAILQ_NEXT(fnp, q, __fname);
+-		if (dbenv->is_alive(dbenv, fnp->pid, 0, DB_MUTEX_PROCESS_ONLY))
++		if (dbenv->is_alive(dbenv, fnp->pid, unused, DB_MUTEX_PROCESS_ONLY))
+ 			continue;
+ 		MUTEX_LOCK(env, fnp->mutex);
+ 		__db_msg(env,
+ 		    "Freeing log information for process: %s, (ref %lu)",
+-		    dbenv->thread_id_string(dbenv, fnp->pid, 0, buf),
++		    dbenv->thread_id_string(dbenv, fnp->pid, unused, buf),
+ 		    (u_long)fnp->txn_ref);
+ 		if (fnp->txn_ref > 1 || F_ISSET(fnp, DB_FNAME_CLOSED)) {
+ 			if (!F_ISSET(fnp, DB_FNAME_CLOSED)) {
+diff --git a/mutex/mut_failchk.c b/mutex/mut_failchk.c
+index 6fbebde..006dc60 100644
+--- a/mutex/mut_failchk.c
++++ b/mutex/mut_failchk.c
+@@ -27,6 +27,8 @@ __mut_failchk(env)
+ 	db_mutex_t i;
+ 	int ret;
+ 	char buf[DB_THREADID_STRLEN];
++	db_threadid_t unused;
++	memset(&unused, 0, sizeof(unused));
+ 
+ 	dbenv = env->dbenv;
+ 	mtxmgr = env->mutex_handle;
+@@ -50,11 +52,11 @@ __mut_failchk(env)
+ 		 * we cannot reclaim the mutex if the process is still alive.
+ 		 */
+ 		if (dbenv->is_alive(
+-		    dbenv, mutexp->pid, 0, DB_MUTEX_PROCESS_ONLY))
++		    dbenv, mutexp->pid, unused, DB_MUTEX_PROCESS_ONLY))
+ 			continue;
+ 
+ 		__db_msg(env, "Freeing mutex for process: %s",
+-		    dbenv->thread_id_string(dbenv, mutexp->pid, 0, buf));
++		    dbenv->thread_id_string(dbenv, mutexp->pid, unused, buf));
+ 
+ 		/* Unlock and free the mutex. */
+ 		if (F_ISSET(mutexp, DB_MUTEX_LOCKED))
+diff --git a/os/os_pid.c b/os/os_pid.c
+index 4eb74f2..6d15f08 100644
+--- a/os/os_pid.c
++++ b/os/os_pid.c
+@@ -41,12 +41,12 @@ __os_id(dbenv, pidp, tidp)
+ 	}
+ 
+ 	if (tidp != NULL) {
+-#if defined(DB_WIN32)
+-		*tidp = GetCurrentThreadId();
++#if defined(HAVE_PTHREAD_SELF)
++		*tidp = pthread_self();
+ #elif defined(HAVE_MUTEX_UI_THREADS)
+ 		*tidp = thr_self();
+-#elif defined(HAVE_PTHREAD_SELF)
+-		*tidp = pthread_self();
++#elif defined(DB_WIN32)
++		*tidp = GetCurrentThreadId();
+ #else
+ 		/*
+ 		 * Default to just getpid.

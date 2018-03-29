@@ -1,9 +1,9 @@
-Building VULCANO
+Building VARIUS
 
-See doc/readme-qt.rst for instructions on building VULCANO QT,
+See doc/readme-qt.rst for instructions on building VARIUS QT,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of VULCANO.
+implementation of VARIUS.
 
-See doc/build-*.txt for instructions on building vulcanod,
+See doc/build-*.txt for instructions on building variusd,
 the intended-for-services, no-graphical-interface, reference
-implementation of VULCANO.
+implementation of VARIUS.
