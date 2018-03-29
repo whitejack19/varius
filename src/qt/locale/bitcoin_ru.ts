@@ -2662,8 +2662,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Listen for connections on &lt;port&gt; (default: 21041 or testnet: 31041)</source>
-        <translation>Принимать входящие подключения на &lt;port&gt; (по умолчанию: 21041 или 31041 в тестовой сети)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 21042771 or testnet: 31041)</source>
+        <translation>Принимать входящие подключения на &lt;port&gt; (по умолчанию: 21042771 или 31041 в тестовой сети)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2722,8 +2722,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-87"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 21042 or testnet: 31042)</source>
-        <translation>Прослушивать подключения JSON-RPC на &lt;порту&gt; (по умолчанию: 21042 или для testnet: 31042)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 21042772 or testnet: 3104277)</source>
+        <translation>Прослушивать подключения JSON-RPC на &lt;порту&gt; (по умолчанию: 21042772 или для testnet: 3104277)</translation>
     </message>
     <message>
         <location line="-11"/>

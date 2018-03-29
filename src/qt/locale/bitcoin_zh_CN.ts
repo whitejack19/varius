@@ -2672,8 +2672,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Listen for connections on &lt;port&gt; (default: 21041 or testnet: 31041)</source>
-        <translation>监听&lt;port&gt;端口的连接 (默认: 21041 测试网: 31041)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 21042771 or testnet: 31041)</source>
+        <translation>监听&lt;port&gt;端口的连接 (默认: 21042771 测试网: 31041)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2732,8 +2732,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-87"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 21042 or testnet: 31042)</source>
-        <translation>监听 &lt;port&gt; 端口的JSON-RPC连接 (默认: 21042 测试网: 31042)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 21042772 or testnet: 3104277)</source>
+        <translation>监听 &lt;port&gt; 端口的JSON-RPC连接 (默认: 21042772 测试网: 3104277)</translation>
     </message>
     <message>
         <location line="-11"/>

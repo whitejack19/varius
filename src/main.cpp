@@ -1005,7 +1005,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 
             if(nBestHeight == 0)
             {
-            nSubsidy = 2000000 * COIN;
+            nSubsidy = 1200000000 * COIN;
             }
 
     if (fDebug && GetBoolArg("-printcreation"))
@@ -2544,7 +2544,7 @@ bool LoadBlockIndex(bool fAllowNew)
         //    CTxOut(empty)
         //  vMerkleTree: 12630d16a9
 
-        const char* pszTimestamp = "The Times 03 Jan 2009 Chancellor on brink of second bailout for banks";
+        const char* pszTimestamp = "Russian exile Nikolai Glushkov found dead at his London home";
         CTransaction txNew;
         txNew.nTime = 1502292612;
         txNew.vin.resize(1);
@@ -2556,9 +2556,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1502292612;
+        block.nTime    = 1522362834;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = !fTestNet ? 1734672 : 1734672;
+        block.nNonce   = !fTestNet ? 493366840 : 493366840;
         
         if (true  && (block.GetHash() != hashGenesisBlock)) {
 
@@ -2584,7 +2584,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nTime = %u \n", block.nTime);
         printf("block.nNonce = %u \n", block.nNonce);
                 
-        assert(block.hashMerkleRoot == uint256("0xb4cce1b07e37ed23453f4d155f54eafc2c86ff0aa5721c1fbef67868ccef2fe9"));
+        assert(block.hashMerkleRoot == uint256("0x60518d463c6afd48beedabef6b8e05a483277ec6a4db6ead9e9cae950a81d3eb"));
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
 
