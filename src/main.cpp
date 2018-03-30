@@ -998,15 +998,28 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
 }
 
 // miner's coin base reward
-int64_t GetProofOfWorkReward(int64_t nFees)
+int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 {
-    
-            int64_t nSubsidy = 20 * COIN;
+    int64_t nSubsidy = 0.5 * COIN;
+    if(nBestHeight == 0)
+    {
+    nSubsidy = 18000000 * COIN;
+    }
 
-            if(nBestHeight == 0)
-            {
-            nSubsidy = 1200000000 * COIN;
-            }
+    else if(nBestHeight <= 10000)
+    {
+    nSubsidy = 0.5 * COIN;
+    }
+
+    else if(nBestHeight <= 10001)
+    {
+            nSubsidy >>= nSubsidy /10000;
+    }
+
+    else if(nBestHeight > 10001)
+    {
+            nSubsidy >>= (nHeight / 10000);
+    }
 
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
@@ -1015,17 +1028,18 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 }
 
 // miner's coin stake reward based on coin age spent (coin-days)
-int64_t GetProofOfStakeReward(std::string payTo, int64_t nCoinAge, int64_t nFees)
+int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
     int64_t nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
 
+    /* Use later maybe
     if (payTo == TEAM_WALLET) {
     	nSubsidy *= 10;
     }
+    */
 
     if (fDebug && GetBoolArg("-printcreation"))
-    	printf("GetProofOfStakeReward(): create=%s nCoinAge=%"PRId64" payTo=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(),
-    			nCoinAge, payTo.c_str(), nSubsidy);
+     printf("GetProofOfStakeReward(): create=%s nCoinAge=%d\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
 
     return nSubsidy + nFees;
 }
@@ -1582,7 +1596,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 
     if (IsProofOfWork())
     {
-        int64_t nReward = GetProofOfWorkReward(nFees);
+        int64_t nReward = GetProofOfWorkReward(pindex->nHeight, nFees);
         // Check coinbase reward
         if (vtx[0].GetValueOut() > nReward)
             return DoS(50, error("ConnectBlock() : coinbase reward exceeded (actual=%"PRId64" vs calculated=%"PRId64")",
@@ -1596,8 +1610,8 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
         if (!vtx[1].GetCoinAge(txdb, nCoinAge))
             return error("ConnectBlock() : %s unable to get coin age for coinstake", vtx[1].GetHash().ToString().substr(0,10).c_str());
 
-        string payTo = CBitcoinAddress(vtx[1].vout[1].scriptPubKey.GetID()).ToString().c_str();
-        int64_t nCalculatedStakeReward = GetProofOfStakeReward(payTo, nCoinAge, nFees);
+        //string payTo = CBitcoinAddress(vtx[1].vout[1].scriptPubKey.GetID()).ToString().c_str();
+        int64_t nCalculatedStakeReward = GetProofOfStakeReward(nCoinAge, nFees);
 
         if (nStakeReward > nCalculatedStakeReward)
             return DoS(100, error("ConnectBlock() : coinstake pays too much(actual=%"PRId64" vs calculated=%"PRId64")", nStakeReward, nCalculatedStakeReward));
@@ -1986,7 +2000,7 @@ bool CBlock::AddToBlockIndex(unsigned int nFile, unsigned int nBlockPos, const u
     pindexNew->SetStakeModifier(nStakeModifier, fGeneratedStakeModifier);
     pindexNew->nStakeModifierChecksum = GetStakeModifierChecksum(pindexNew);
     if (!CheckStakeModifierCheckpoints(pindexNew->nHeight, pindexNew->nStakeModifierChecksum))
-        return error("AddToBlockIndex() : Rejected by stake modifier checkpoint height=%d, modifier=0x%016"PRIx64, pindexNew->nHeight, nStakeModifier);
+        return error("AddToBlockIndex() : Rejected by stake modifier checkpoint height=%d, modifier=0x%016"PRIx64", modifierCheckSum=0x%08"PRIx64, pindexNew->nHeight, nStakeModifier, pindexNew->nStakeModifierChecksum);
 
     // Add to mapBlockIndex
     map<uint256, CBlockIndex*>::iterator mi = mapBlockIndex.insert(make_pair(hash, pindexNew)).first;
@@ -2546,7 +2560,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         const char* pszTimestamp = "Russian exile Nikolai Glushkov found dead at his London home";
         CTransaction txNew;
-        txNew.nTime = 1502292612;
+        txNew.nTime = 1522362834;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2558,7 +2572,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nVersion = 1;
         block.nTime    = 1522362834;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = !fTestNet ? 493366840 : 493366840;
+        block.nNonce   = !fTestNet ? 495241257 : 495241257;
         
         if (true  && (block.GetHash() != hashGenesisBlock)) {
 
@@ -2584,7 +2598,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nTime = %u \n", block.nTime);
         printf("block.nNonce = %u \n", block.nNonce);
                 
-        assert(block.hashMerkleRoot == uint256("0x60518d463c6afd48beedabef6b8e05a483277ec6a4db6ead9e9cae950a81d3eb"));
+        assert(block.hashMerkleRoot == uint256("0x79d1240afc2d9c7a6e5a39ca6a73b274096d439753d455a351d7f46ad9894fef"));
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
 

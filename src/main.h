@@ -48,15 +48,16 @@ static const int64_t MIN_TX_FEE = 10000;
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 /** No amount larger than this (in satoshi) is valid */
-static const int64_t MAX_MONEY = 12000000000 * COIN;
+static const int64_t MAX_MONEY = 5000000000 * COIN;
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
-static const int64_t COIN_YEAR_REWARD = 730 * CENT;
+static const int64_t COIN_YEAR_REWARD = 365 * CENT;
+static const int64_t SWAP_COIN_FACTOR = 1000;
 
-static const uint256 hashGenesisBlock("0x00000fce204e6ad2fc283cd58c0329f89c10d561f4ffd467700dbf86b96a390de5e1b");
-static const uint256 hashGenesisBlockTestNet("0x00000fce204e6ad2fc283cd58c0329f89c10d561f4ffd467700dbf86b96a390de5e1b");
+static const uint256 hashGenesisBlock("0x00000bca1a1c882cea326a723df426e9d419b36ed32975a898ecf5935a1366bf");
+static const uint256 hashGenesisBlockTestNet("0x00000bca1a1c882cea326a723df426e9d419b36ed32975a898ecf5935a1366bf");
 
 static const string TEAM_WALLET = "VQugUWotD4gZpRQjSwDPv5BA2jkNNe7SNN";
 
@@ -122,8 +123,8 @@ bool LoadExternalBlockFile(FILE* fileIn);
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake);
-int64_t GetProofOfWorkReward(int64_t nFees);
-int64_t GetProofOfStakeReward(std::string payTo, int64_t nCoinAge, int64_t nFees);
+int64_t GetProofOfWorkReward(int nHeight, int64_t nFees);
+int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees); /*std::string payTo,*/
 unsigned int ComputeMinWork(unsigned int nBase, int64_t nTime);
 unsigned int ComputeMinStake(unsigned int nBase, int64_t nTime, unsigned int nBlockTime);
 int GetNumBlocksOfPeers();
