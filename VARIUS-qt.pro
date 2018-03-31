@@ -5,7 +5,6 @@ INCLUDEPATH += src src/json src/qt
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE BOOST_THREAD_PROVIDES_GENERIC_SHARED_MUTEX_ON_WIN
 CONFIG += no_include_pwd
 CONFIG += thread
-CONFIG += static
 
 greaterThan(QT_MAJOR_VERSION, 4) {
     QT += widgets
@@ -56,13 +55,9 @@ QMAKE_LFLAGS *= -fstack-protector-all --param ssp-buffer-size=1
 # This can be enabled for Windows, when we switch to MinGW >= 4.4.x.
 }
 # for extra security on Windows: enable ASLR and DEP via GCC linker flags
-win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat -static
-win32:QMAKE_LFLAGS += -static-libgcc -static-libstdc++
+win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat
+win32:QMAKE_LFLAGS += -static -static-libgcc -static-libstdc++
 
-!win32:!macx {
-    QMAKE_LFLAGS *= -static
-    QMAKE_LFLAGS *= -Wl,--large-address-aware
-}
 
 # bug in gcc 4.4 breaks some pointer code
 # QMAKE_CXXFLAGS += -fno-strict-aliasing
@@ -441,9 +436,9 @@ INCLUDEPATH += $$BOOST_INCLUDE_PATH $$BDB_INCLUDE_PATH $$OPENSSL_INCLUDE_PATH $$
 LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,)
 LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
 # -lgdi32 has to happen after -lcrypto (see  #681)
-windows:LIBS += -lws2_32 -lshlwapi -lmswsock -lole32 -loleaut32  -luuid -lgdi32 -lpthread
+windows:LIBS += -lws2_32 -lshlwapi -lmswsock -lole32 -loleaut32  -luuid -lgdi32
 LIBS += -lboost_system$$BOOST_LIB_SUFFIX -lboost_filesystem$$BOOST_LIB_SUFFIX -lboost_program_options$$BOOST_LIB_SUFFIX -lboost_thread$$BOOST_THREAD_LIB_SUFFIX
-windows:LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX
+windows:LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX -Bstatic -LC:/MinGW/bin -lpthread
 
 contains(RELEASE, 1) {
     !windows:!macx {
