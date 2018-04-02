@@ -40,7 +40,14 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // "standard" scrypt target limit
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
-unsigned int nTargetSpacing = 1 * 60; // 1 minute
+int FORK_1_BLOCK_IDX = 270;
+
+unsigned int nTargetSpacing_v1 = 1 * 60; // 1 minute
+unsigned int nTargetSpacing = 3 * 60; // 3 minutes
+
+static const int64_t nTargetTimespan_v1 = 16 * 60; // 16 mins
+static const int64_t nTargetTimespan = 60 * 60;  // 60 mins
+
 unsigned int nStakeMinAge = 4 * 60 * 60;
 unsigned int nStakeMaxAge = -1; // unlimited
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
@@ -1044,8 +1051,6 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
     return nSubsidy + nFees;
 }
 
-static const int64_t nTargetTimespan = 16 * 60;  // 16 mins
-
 //
 // maximum nBits value could possible be required nTime after
 //
@@ -1112,9 +1117,9 @@ static unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool 
     // ppcoin: retarget with exponential moving toward target spacing
     CBigNum bnNew;
     bnNew.SetCompact(pindexPrev->nBits);
-    int64_t nInterval = nTargetTimespan / nTargetSpacing;
-    bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
-    bnNew /= ((nInterval + 1) * nTargetSpacing);
+    int64_t nInterval = nTargetTimespan_v1 / nTargetSpacing_v1;
+    bnNew *= ((nInterval - 1) * nTargetSpacing_v1 + nActualSpacing + nActualSpacing);
+    bnNew /= ((nInterval + 1) * nTargetSpacing_v1);
 
     if (bnNew > bnTargetLimit)
         bnNew = bnTargetLimit;
@@ -1156,7 +1161,7 @@ static unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool 
 
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
-    if (pindexLast->nHeight < 100000)
+    if (pindexLast->nHeight < FORK_1_BLOCK_IDX)
         return GetNextTargetRequiredV1(pindexLast, fProofOfStake);
     else
         return GetNextTargetRequiredV2(pindexLast, fProofOfStake);
@@ -2144,8 +2149,8 @@ bool CBlock::AcceptBlock()
     CBlockIndex* pindexPrev = (*mi).second;
     int nHeight = pindexPrev->nHeight+1;
 
-    if (IsProofOfWork() && nHeight > LAST_POW_BLOCK)
-        return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
+    //if (IsProofOfWork() && nHeight > LAST_POW_BLOCK)
+    //    return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
 
     // Check proof-of-work or proof-of-stake
     if (nBits != GetNextTargetRequired(pindexPrev, IsProofOfStake()))
