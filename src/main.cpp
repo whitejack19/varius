@@ -40,7 +40,7 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // "standard" scrypt target limit
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
-int FORK_1_BLOCK_IDX = 270;
+int FORK_1_BLOCK_IDX = 300;
 
 unsigned int nTargetSpacing_v1 = 1 * 60; // 1 minute
 unsigned int nTargetSpacing = 3 * 60; // 3 minutes
