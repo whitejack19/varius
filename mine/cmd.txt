@@ -1,1 +1,1 @@
-cpuminer-2.3.2-win32>minerd --url=http://127.0.0.1:8888 --userpass=rrrrr:ffff
+cpuminer-2.3.2-win32>minerd --url=http://127.0.0.1:8888 --userpass=rrrrr:ffff -t2

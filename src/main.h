@@ -30,6 +30,7 @@ class CNode;
 class CTxMemPool;
 
 static const int LAST_POW_BLOCK = 100000;
+static const bool LIMIT_POW_BLOCKS = false;
 
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
@@ -57,7 +58,7 @@ static const int64_t COIN_YEAR_REWARD = 365 * CENT;
 static const int64_t SWAP_COIN_FACTOR = 1000;
 
 static const uint256 hashGenesisBlock("0x00000bca1a1c882cea326a723df426e9d419b36ed32975a898ecf5935a1366bf");
-static const uint256 hashGenesisBlockTestNet("0x00000bca1a1c882cea326a723df426e9d419b36ed32975a898ecf5935a1366bf");
+static const uint256 hashGenesisBlockTestNet("0x00006047eca60e3da0cd6c880983982ef299d6238787afaa705cb42148b88c7f");
 
 static const string TEAM_WALLET = "VQugUWotD4gZpRQjSwDPv5BA2jkNNe7SNN";
 

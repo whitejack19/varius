@@ -1046,7 +1046,7 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
     */
 
     if (fDebug && GetBoolArg("-printcreation"))
-     printf("GetProofOfStakeReward(): create=%s nCoinAge=%d\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
+    	printf("GetProofOfStakeReward(): create=%s nCoinAge=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
 
     return nSubsidy + nFees;
 }
@@ -2149,8 +2149,8 @@ bool CBlock::AcceptBlock()
     CBlockIndex* pindexPrev = (*mi).second;
     int nHeight = pindexPrev->nHeight+1;
 
-    //if (IsProofOfWork() && nHeight > LAST_POW_BLOCK)
-    //    return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
+    if (LIMIT_POW_BLOCKS && IsProofOfWork() && nHeight > LAST_POW_BLOCK)
+        return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
 
     // Check proof-of-work or proof-of-stake
     if (nBits != GetNextTargetRequired(pindexPrev, IsProofOfStake()))
