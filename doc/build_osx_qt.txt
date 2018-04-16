@@ -1,0 +1,2 @@
+PREPARATION: brew install autoconf automake berkeley-db4 libtool boost@1.57 miniupnpc openssl pkg-config protobuf qt5
+PREPARATION: brew link qt5 --force;brew link boost@1.57 --force
