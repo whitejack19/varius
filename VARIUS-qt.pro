@@ -5,6 +5,7 @@ INCLUDEPATH += src src/json src/qt
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE BOOST_THREAD_PROVIDES_GENERIC_SHARED_MUTEX_ON_WIN
 CONFIG += no_include_pwd
 CONFIG += thread
+QT += widgets
 
 greaterThan(QT_MAJOR_VERSION, 4) {
     QT += widgets
@@ -22,14 +23,17 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
 
 
-BOOST_INCLUDE_PATH=C:/MinGW/deps/boost_1_55_0
-BOOST_LIB_PATH=C:/MinGW/deps/boost_1_55_0/stage/lib
-BDB_INCLUDE_PATH=C:/MinGW/deps/db-4.8.30.NC/build_unix
-BDB_LIB_PATH=C:/MinGW/deps/db-4.8.30.NC/build_unix
-OPENSSL_INCLUDE_PATH=C:/MinGW/deps/openssl-1.0.1j/include
-OPENSSL_LIB_PATH=C:/MinGW/deps/openssl-1.0.1j
-MINIUPNPC_INCLUDE_PATH=C:/MinGW/deps/miniupnpc-1.9
-MINIUPNPC_LIB_PATH=C:/MinGW/deps/miniupnpc-1.9
+macx {
+ BOOST_INCLUDE_PATH=/usr/local/Cellar/boost\@1.57/1.57.0/include
+ BOOST_LIB_PATH=/usr/local/Cellar/boost\@1.57/1.57.0/lib
+ BDB_INCLUDE_PATH=/usr/local/Cellar/berkeley-db\@4/4.8.30/include
+ BDB_LIB_PATH=/usr/local/Cellar/berkeley-db\@4/4.8.30/lib
+ OPENSSL_INCLUDE_PATH=/usr/local/opt/openssl/include
+ OPENSSL_LIB_PATH=/usr/local/opt/openssl/lib
+ MINIUPNPC_INCLUDE_PATH=/usr/local/Cellar/miniupnpc/2.0.20180410/include
+ MINIUPNPC_LIB_PATH=/usr/local/Cellar/miniupnpc/2.0.20180410/lib
+}
+
 #QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
 #QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
 OBJECTS_DIR = build
@@ -39,7 +43,7 @@ UI_DIR = build
 # use: qmake "RELEASE=1"
 contains(RELEASE, 1) {
     # Mac: compile for maximum compatibility (10.5, 32-bit)
-    macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.5 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk
+    macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.13 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk
 
     !windows:!macx {
         # Linux: static link
@@ -114,7 +118,7 @@ LIBS += $$PWD/src/leveldb/libleveldb.a $$PWD/src/leveldb/libmemenv.a
 SOURCES += src/txdb-leveldb.cpp
 !win32 {
     # we use QMAKE_CXXFLAGS_RELEASE even without RELEASE=1 because we use RELEASE to indicate linking preferences not -O preferences
-    #genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a
+    genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a
 } else {
     # make an educated guess about what the ranlib command is called
     isEmpty(QMAKE_RANLIB) {
@@ -421,8 +425,8 @@ windows:!contains(MINGW_THREAD_BUGFIX, 0) {
     QMAKE_LIBS_QT_ENTRY = -lmingwthrd $$QMAKE_LIBS_QT_ENTRY
 }
 
-macx:HEADERS += src/qt/macdockiconhandler.h
-macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm
+macx:HEADERS += src/qt/macdockiconhandler.h src/qt/macnotificationhandler.h
+macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm src/qt/macnotificationhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
 macx:ICON = src/qt/res/icons/bitcoin.icns
