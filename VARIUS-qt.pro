@@ -2,7 +2,7 @@ TEMPLATE = app
 TARGET = varius-qt
 VERSION = 1.0.7
 INCLUDEPATH += src src/json src/qt
-DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE BOOST_THREAD_PROVIDES_GENERIC_SHARED_MUTEX_ON_WIN
+DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
 CONFIG += no_include_pwd
 CONFIG += thread
 QT += widgets
@@ -22,6 +22,16 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
 
+win32 {
+  BOOST_INCLUDE_PATH=C:/devel/boost_1_55_0
+  BOOST_LIB_PATH=C:/devel/boost_1_55_0/stage/lib
+  BDB_INCLUDE_PATH=C:/devel/db-4.8.30
+  BDB_LIB_PATH=C:/devel/db-4.8.30
+  OPENSSL_INCLUDE_PATH=C:/devel/openssl-1.0.2o/include
+  OPENSSL_LIB_PATH=C:/devel/openssl-1.0.2o
+  MINIUPNPC_INCLUDE_PATH=C:/devel/miniupnpc-1.9
+  MINIUPNPC_LIB_PATH=C:/devel/miniupnpc-1.9
+}
 
 macx {
  BOOST_INCLUDE_PATH=/usr/local/Cellar/boost\@1.57/1.57.0/include
@@ -63,16 +73,6 @@ win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat
 win32:QMAKE_LFLAGS += -static -static-libgcc -static-libstdc++
 
 
-# bug in gcc 4.4 breaks some pointer code
-# QMAKE_CXXFLAGS += -fno-strict-aliasing
-# bug in gcc 4.4 breaks some pointer code
-# QMAKE_CXXFLAGS += -fno-strict-aliasing
-    win32:contains(WINBITS, 32) {
-      # can have strict aliasing if opt is 0
-      QMAKE_CXXFLAGS_RELEASE -= -O2
-      QMAKE_CXXFLAGS_RELEASE += -O0
-}
-
 # use: qmake "USE_QRCODE=1"
 # libqrencode (http://fukuchi.org/works/qrencode/index.en.html) must be installed for support
 contains(USE_QRCODE, 1) {
@@ -92,7 +92,7 @@ contains(USE_UPNP, -) {
     count(USE_UPNP, 0) {
         USE_UPNP=1
     }
-    DEFINES += USE_UPNP=$$USE_UPNP STATICLIB
+    DEFINES += USE_UPNP=$$USE_UPNP MINIUPNP_STATICLIB
     INCLUDEPATH += $$MINIUPNPC_INCLUDE_PATH
     LIBS += $$join(MINIUPNPC_LIB_PATH,,-L,) -lminiupnpc
     win32:LIBS += -liphlpapi
@@ -119,6 +119,7 @@ SOURCES += src/txdb-leveldb.cpp
 !win32 {
     # we use QMAKE_CXXFLAGS_RELEASE even without RELEASE=1 because we use RELEASE to indicate linking preferences not -O preferences
     genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a
+    LIBS += -lgmp
 } else {
     # make an educated guess about what the ranlib command is called
     isEmpty(QMAKE_RANLIB) {
@@ -383,7 +384,7 @@ OTHER_FILES += \
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {
     macx:BOOST_LIB_SUFFIX = -mt
-    windows:BOOST_LIB_SUFFIX = -mgw46-mt-s-1_55
+    windows:BOOST_LIB_SUFFIX = -mgw73-mt-s-1_55
 }
 
 isEmpty(BOOST_THREAD_LIB_SUFFIX) {
@@ -442,7 +443,7 @@ LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
 # -lgdi32 has to happen after -lcrypto (see  #681)
 windows:LIBS += -lws2_32 -lshlwapi -lmswsock -lole32 -loleaut32  -luuid -lgdi32
 LIBS += -lboost_system$$BOOST_LIB_SUFFIX -lboost_filesystem$$BOOST_LIB_SUFFIX -lboost_program_options$$BOOST_LIB_SUFFIX -lboost_thread$$BOOST_THREAD_LIB_SUFFIX
-windows:LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX -Bstatic -LC:/MinGW/bin -lpthread
+windows:LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX -Bstatic
 
 contains(RELEASE, 1) {
     !windows:!macx {
