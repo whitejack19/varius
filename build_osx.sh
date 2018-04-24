@@ -1,4 +1,4 @@
-qmake RELEASE=1 USE_UPNP=1 USE_QRCODE=1 VARIUS-qt.pro
+qmake RELEASE=1 USE_UPNP=1 USE_QRCODE=0 VARIUS-qt.pro
 make
 export QTDIR=/usr/local/Cellar/qt/5.10.1/
 T=$(contrib/qt_translations.py $QTDIR/translations src/qt/locale)
