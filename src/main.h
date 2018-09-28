@@ -55,12 +55,11 @@ inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MO
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
 static const int64_t COIN_YEAR_REWARD = 365 * CENT;
-static const int64_t SWAP_COIN_FACTOR = 1000;
 
 static const uint256 hashGenesisBlock("0x00000bca1a1c882cea326a723df426e9d419b36ed32975a898ecf5935a1366bf");
 static const uint256 hashGenesisBlockTestNet("0x00006047eca60e3da0cd6c880983982ef299d6238787afaa705cb42148b88c7f");
 
-static const string TEAM_WALLET = "VQugUWotD4gZpRQjSwDPv5BA2jkNNe7SNN";
+static const int FORK_1_HEIGHT = 132100;
 
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 10 * 60; } // up to 10 minutes from the past
 inline int64_t FutureDrift(int64_t nTime) { return nTime + 10 * 60; } // up to 10 minutes from the future

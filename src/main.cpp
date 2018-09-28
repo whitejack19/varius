@@ -1010,22 +1010,28 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
     int64_t nSubsidy = 0.5 * COIN;
     if(nBestHeight == 0)
     {
-    nSubsidy = 18000000 * COIN;
+        nSubsidy = 18000000 * COIN;
     }
 
     else if(nBestHeight <= 10000)
     {
-    nSubsidy = 0.5 * COIN;
+        nSubsidy = 0.5 * COIN;
     }
 
     else if(nBestHeight <= 10001)
     {
-            nSubsidy >>= nSubsidy /10000;
+        nSubsidy >>= nSubsidy /10000;
     }
 
     else if(nBestHeight > 10001)
     {
-            nSubsidy >>= (nHeight / 10000);
+        int halvings = (nHeight / 10000);
+
+        if (halvings >= 64) {
+            nSubsidy = 0;
+        } else {
+            nSubsidy >>= halvings;
+        }
     }
 
     if (fDebug && GetBoolArg("-printcreation"))
@@ -2898,7 +2904,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
         CAddress addrFrom;
         uint64_t nNonce = 1;
         vRecv >> pfrom->nVersion >> pfrom->nServices >> nTime >> addrMe;
-        if (pfrom->nVersion < MIN_PEER_PROTO_VERSION)
+        if (pfrom->nVersion < MIN_PEER_PROTO_VERSION || (nBestHeight > FORK_1_HEIGHT && pfrom->nVersion < MIN_PEER_PROTO_VERSION_FORK_1) )
         {
             // disconnect from peers older than this proto version
             printf("partner %s using obsolete version %i; disconnecting\n", pfrom->addr.ToString().c_str(), pfrom->nVersion);
