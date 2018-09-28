@@ -2136,7 +2136,7 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
     return true;
 }
 
-bool CBlock::AcceptBlock()
+bool CBlock::AcceptBlock(CNode* pfrom, CBlock* pblock)
 {
     AssertLockHeld(cs_main);
 
@@ -2183,6 +2183,11 @@ bool CBlock::AcceptBlock()
         if (!CheckProofOfStake(vtx[1], nBits, hashProof, targetProofOfStake))
         {
             printf("WARNING: AcceptBlock(): check proof-of-stake failed for block %s\n", hash.ToString().c_str());
+
+            // peershares: ask for missing blocks
+            if (pfrom)
+                pfrom->PushGetBlocks(pindexBest, pblock->GetHash());
+
             return false; // do not error here as we expect this during initial block download
         }
     }
@@ -2334,7 +2339,7 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
     }
 
     // Store to disk
-    if (!pblock->AcceptBlock())
+    if (!pblock->AcceptBlock(pfrom, pblock))
         return error("ProcessBlock() : AcceptBlock FAILED");
 
     // Recursively process any orphan blocks that depended on this one
@@ -2348,7 +2353,7 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
              ++mi)
         {
             CBlock* pblockOrphan = (*mi).second;
-            if (pblockOrphan->AcceptBlock())
+            if (pblockOrphan->AcceptBlock(pfrom, pblock))
                 vWorkQueue.push_back(pblockOrphan->GetHash());
             mapOrphanBlocks.erase(pblockOrphan->GetHash());
             setStakeSeenOrphan.erase(pblockOrphan->GetProofOfStake());
@@ -3127,7 +3132,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
                 printf("  got inventory: %s  %s\n", inv.ToString().c_str(), fAlreadyHave ? "have" : "new");
 
             if (!fAlreadyHave)
-                pfrom->AskFor(inv);
+                pfrom->AskFor(inv, IsInitialBlockDownload()); // peershares: immediate retry during initial download
             else if (inv.type == MSG_BLOCK && mapOrphanBlocks.count(inv.hash)) {
                 pfrom->PushGetBlocks(pindexBest, GetOrphanRoot(mapOrphanBlocks[inv.hash]));
             } else if (nInv == nLastBlock) {
@@ -3181,8 +3186,9 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
                         // ppcoin: send latest proof-of-work block to allow the
                         // download node to accept as orphan (proof-of-stake 
                         // block might be rejected by stake connection check)
+                        // peershares: send latest block
                         vector<CInv> vInv;
-                        vInv.push_back(CInv(MSG_BLOCK, GetLastBlockIndex(pindexBest, false)->GetBlockHash()));
+                        vInv.push_back(CInv(MSG_BLOCK, hashBestChain));
                         pfrom->PushMessage("inv", vInv);
                         pfrom->hashContinue = 0;
                     }
