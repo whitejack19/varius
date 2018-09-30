@@ -38,8 +38,6 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // "standard" scrypt target limit
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
-int FORK_1_BLOCK_IDX = 300;
-
 unsigned int nTargetSpacing_v1 = 1 * 60; // 1 minute
 unsigned int nTargetSpacing = 3 * 60; // 3 minutes
 
@@ -1165,7 +1163,7 @@ static unsigned int GetNextTargetRequiredV2(const CBlockIndex* pindexLast, bool 
 
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
-    if (pindexLast->nHeight < FORK_1_BLOCK_IDX)
+    if (pindexLast->nHeight < 300)
         return GetNextTargetRequiredV1(pindexLast, fProofOfStake);
     else
         return GetNextTargetRequiredV2(pindexLast, fProofOfStake);
