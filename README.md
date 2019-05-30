@@ -20,5 +20,7 @@ which nodes to connect to so it can sync the blockchain data correctly!
 
 ## Wallet data folder paths
 Windows: %appdata%\VARIUS
+
 Mac: ~/Library/Application Support/VARIUS
-Linux ~/.varius)
+
+Linux ~/.varius
